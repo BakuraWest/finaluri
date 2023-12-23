@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+  padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+    /* position: fixed; */
+    /* background-color: lightgrey; */
+   
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+}
+
+.logo img{
+    max-height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; 
+    gap: 50px;
+}
+
+li {
+    margin-left: 100px;
+}
+
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .navbar a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+  }
+  
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+a:hover {
+    color: darkblue; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* border-radius: 8px; */
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 20px;
+    width: 188px;
+    
+}
+/* .search-bar i{
+    background-color: lightgray;
+} */
+button{
+    border: none;
+    background-color: white;
+}
+
+button i:hover{
+    color: royalblue;
+}
+
+button i {
+    font-size: 20px; 
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+.icons i{
+    font-size: 20px;
+    
+}
+
+.menu{
+    display: none;
+}
+
+input[type="checkbox"]{
+display: none;
+}
+
+    
+
+
+input:checked ~ ul{
+    display: block;
+}
+
+.containe{
+    background-image: url(../images/float.webp);
+    height: 615px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containe p{
+    width: 650px;
+    height: 200px;
+    /* flex-shrink: 0; */
+    color: #FFF;
+    text-align: center;
+    font-family: Judson;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.new{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.zoli{
+    width: 253px;
+    height: 1px;
+    background-color: black;
+    border: 1px  black; 
+}
+
+.new p{
+    color: #000;
+    font-family: Kaisei Decol;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 192px;
+    background-color: #273A47;
+    border-radius: 50%;
+    color: #FFF;
+    font-family: 'Kaushan Script';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.circletxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circletxt p{
+    max-width: 300px;
+    color: #000;
+    text-align: center;
+    font-family: Kaisei Decol;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom{
+    height: 524px;
+    background-image: url(../images/travis.webp);
+    background-size: cover;
+    margin-top: 140px;
+}
+
+.transparent{
+    background: rgba(0, 0, 0, 0.50);
+    color: white;
+    width: 749px;
+    height: 524px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.transparent h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Kadwa;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.transparent p{
+    width: 577px;
+    color: #FFF;
+    font-family: Kadwa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.abtus{
+    width: 100%;
+    height: 330px;
+    background-color: #E4E4E4;
+    margin-top: 191px;
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+
+.abtus h3{
+    border-bottom: 1px solid black;
+    color: #000;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btmbtm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+.btminfo{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.btminfo2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.btminfo2 input{
+    border: 1px solid black;
+    border-radius: 8px;
+    height:34px ;
+    
+}
+
+
+.sub{
+    width: 127px;
+    height: 34px;
+    border-radius: 8px;
+    background: #273A47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+@media (max-width:500px){
+    .menu{
+        display: block;
+        font-size: 40px;
+    }
+    ul{
+        display: none;
+    }
+    .search-bar, .icons {
+        display: none;
+    }
+   
+    
+    .navbar{
+        justify-content: space-between;
+    }
+}

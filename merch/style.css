@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+  padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+    /* position: fixed; */
+    /* background-color: lightgrey; */
+   
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+}
+
+.logo img{
+    max-height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; 
+    gap: 50px;
+}
+
+li {
+    margin-left: 100px;
+}
+.menu{
+    display: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input:checked + ul{
+    display: block;
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .navbar a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+  }
+  
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+a:hover {
+    color: darkblue; 
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* border-radius: 8px; */
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 20px;
+    width: 188px;
+    
+}
+/* .search-bar i{
+    background-color: lightgray;
+} */
+button{
+    border: none;
+    background-color: white;
+}
+
+button i:hover{
+    color: royalblue;
+}
+
+button i {
+    font-size: 20px; 
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+.icons i{
+    font-size: 20px;   
+}
+
+.containe{
+    background-image: url(../images/westprof.webp);
+    height: 615px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.containe p{
+    width: 650px;
+    height: 200px;
+    /* flex-shrink: 0; */
+    color: #FFF;
+    text-align: center;
+    font-family: Judson;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.new{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.zoli{
+    width: 253px;
+    height: 1px;
+    background-color: black;
+    border: 1px  black; 
+}
+
+.new p{
+    color: #000;
+    font-family: Kaisei Decol;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+
+
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+}
+.products2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 200px;
+
+}
+
+.placement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product1{
+    width: 324px;
+    height: 324px;
+    background-image: url(../images/gradbear.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.product2{
+    width: 324px;
+    height: 324px;
+    background-image: url(../images/costume.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product3{
+    width: 324px;
+    height: 324px;
+    background-image: url(../images/figure.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product4{
+    width: 324px;
+    height: 324px;
+    background-image: url(../images/twisted.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.product5{
+    width: 324px;
+    height: 324px;
+    background-image: url(../images/VOTE.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.product6{
+    width: 324px;
+    height: 324px;
+    background-image: url(../images/poster.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.purchase{
+    width: 200px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #273A47;
+    font-family: Jomolhari;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    outline: none;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+  
+}
+
+.purchase::before, .purchase::after {
+    box-sizing: inherit;
+    position: absolute;
+    content: '';
+    border: 2px solid transparent;
+    border-radius:  8px;
+    width: 0;
+    height: 0;
+
+  }
+
+  .purchase::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .purchase::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .purchase:hover::before, .purchase:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .purchase:hover::before {
+    border-top-color: #24253C;
+    border-right-color: #24253C;
+    border-radius: 8px;
+    transition: width 0.3s linear, height 0.3s linear 0.3s;
+  }
+  
+  .purchase:hover::after {
+    border-bottom-color: #24253C;
+    border-left-color: #24253C;
+    border-radius: 8px;
+    transition: border-color 0s linear 0.6s, width 0.3s linear 0.6s, height 0.3s linear 1s;
+  }
+
+.abtus{
+    width: 100%;
+    height: 330px;
+    background-color: #E4E4E4;
+    margin-top: 70px;
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+
+.abtus h3{
+    border-bottom: 1px solid black;
+    color: #000;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btmbtm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+.btminfo{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.btminfo2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.btminfo2 input{
+    border: 1px solid black;
+    border-radius: 8px;
+    height:34px ;
+    
+}
+
+
+.sub{
+    width: 127px;
+    height: 34px;
+    border-radius: 8px;
+    background: #273A47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
