@@ -561,8 +561,10 @@ input:checked + ul{
             flex-direction: column;
    }
 
-   .zoli{
-    width: 100px;
+   
+   .zoli {
+    width: 80px;
+   
    }
 
    .cover p{
@@ -584,4 +586,13 @@ input:checked + ul{
    }
 
 
+}
+
+@media (max-width:400px){
+    .new p{
+        font-size: 25px;
+    }
+    .test p{
+        font-size: 25px;
+    }
 }
