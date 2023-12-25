@@ -51,6 +51,7 @@ input:checked + ul{
     display: block;
 }
 
+
 .navbar a::after{
     content: '';
     position: absolute;
@@ -150,170 +151,128 @@ button i {
     line-height: normal;
 }
 
-.new{
+.where{
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.zoli{
-    width: 253px;
-    height: 1px;
-    background-color: black;
-    border: 1px  black; 
-}
-
-.new p{
+.where p{
     color: #000;
-    font-family: Kaisei Decol;
-    font-size: 30px;
+    font-family: JejuMyeongjo;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;    
+    line-height: normal;
 }
 
 
-.products{
+.product{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    gap: 60px;
-}
-.products2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 60px;
-    margin-top: 200px;
-
+    justify-content: space-around;
+    color: #000;
+    font-family: Kameron;
+    font-size: 20px;
+    
+    /* font-style: normal; */
+    /* line-height: normal; */
 }
 
-.placement{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.product h4{
+    font-family: JejuMyeongjo;
+    font-size: 25px;
+   
+    
 }
 
-.product1{
-    width: 324px;
-    height: 324px;
+.product h3{
+    color: #000;
+    font-family: 'Metal', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product p{
+    max-width: 500px;
+}
+
+
+.pic{
+    width: 400px;
+    height: 400px;
     background-image: url(../images/gradbear.webp);
     background-position: center;
     background-size: cover;
 }
 
-.product2{
-    width: 324px;
-    height: 324px;
-    background-image: url(../images/costume.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.product3{
-    width: 324px;
-    height: 324px;
-    background-image: url(../images/figure.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.product4{
-    width: 324px;
-    height: 324px;
-    background-image: url(../images/twisted.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-.product5{
-    width: 324px;
-    height: 324px;
-    background-image: url(../images/VOTE.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-.product6{
-    width: 324px;
-    height: 324px;
-    background-image: url(../images/poster.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-.purchase{
-    width: 200px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: transparent;
-    color: #273A47;
-    font-family: Jomolhari;
+.product p2{
+    color: #000;
+    font-family: 'Nanum Myeongjo', serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+}
+.buynow{
+    width: 426.617px;
+    height: 76px;
+    border-radius: 20px;
+    background: #24253C;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    outline: none;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border: none;
-    margin-top: 20px;
 }
 
-.purchase::before, .purchase::after {
-    box-sizing: inherit;
-    position: absolute;
-    content: '';
-    border: 2px solid transparent;
-    border-radius:  8px;
-    width: 0;
-    height: 0;
+.buynow p{
+    color: #FFF;
+    font-family: 'Jomolhari', serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: normal;
+}
 
+.fav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.love{
+    font-size: 30px;
+}
+
+.love input[type="checkbox"] {
+    display: none;
   }
 
-  .purchase::after {
-    bottom: 0;
-    right: 0;
+  .love i {
+    color: lightgray;
   }
-  
-  .purchase::before {
-    top: 0;
-    left: 0;
+
+
+  .love input[type="checkbox"]:checked + label i {
+    color: red; 
   }
-  
-  .purchase:hover::before, .purchase:hover::after {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .purchase:hover::before {
-    border-top-color: #24253C;
-    border-right-color: #24253C;
-    border-radius: 8px;
-    transition: width 0.3s linear, height 0.3s linear 0.3s;
-  }
-  
-  .purchase:hover::after {
-    border-bottom-color: #24253C;
-    border-left-color: #24253C;
-    border-radius: 8px;
-    transition: border-color 0s linear 0.6s, width 0.3s linear 0.6s, height 0.3s linear 1s;
-  }
+
 
 .abtus{
     width: 100%;
     height: 330px;
     background-color: #E4E4E4;
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .rows{
@@ -372,79 +331,4 @@ button i {
     justify-content: center;
     align-items: center;
     color: #FFF;
-}
-
-.quantity{
-    border: 1px solid black;
-    width: 250px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-
-.quantity p{
-    color: #000;
-    font-family: JejuMyeongjo;
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-@media (max-width:500px){
-    .menu{
-        display: block;
-        font-size: 40px;
-    }
-    ul{
-        display: none;
-    }
-    .search-bar, .icons {
-        display: none;
-    }
-   
-    .navbar{
-        justify-content: space-between;
-    }
-
-   .containe p{
-        font-size: 25px;
-        max-width: 250px;
-   }
-
-   .containe{
-    width: 100%;
-    height: 268px;
-   }
-
-   .products, .products2{
-    flex-direction: column;
-   }
-  
-
-   .zoli{
-    width: 100px;
-   }
-
-   .cover p{
-    font-weight: 500;
-    font-size: 30px;
-    max-width: 300px;
-   }
-
-   .cadetblue h2{
-    max-width: 10px;
-   }
-
-   .row1, .btminfo2 {
-    display: none;
-   }
-
-   .test{
-    width: auto;
-   }
-
-
 }

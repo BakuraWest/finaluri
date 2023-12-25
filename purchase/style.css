@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -57,6 +50,17 @@ ul {
 li {
     margin-left: 100px;
 }
+.menu{
+    display: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input:checked + ul{
+    display: block;
+}
 
 
 .navbar a::after{
@@ -102,6 +106,7 @@ a:hover {
     color: darkblue; 
 }
 
+
 .search-bar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -146,24 +151,11 @@ button i {
 }
 
 .icons i{
-    font-size: 20px;
-    
-}
-
-.menu{
-    display: none;
-}
-
-input[type="checkbox"]{
-    display: none;
-}
-
-input:checked + ul{
-    display: block;
+    font-size: 20px;   
 }
 
 .containe{
-    background-image: url(../images/back.jpg);
+    background-image: url(../images/westprof.webp);
     height: 615px;
     width: 100%;
     background-repeat: no-repeat;
@@ -181,6 +173,7 @@ input:checked + ul{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    color: white;
 }
 
 .containe p{
@@ -196,11 +189,7 @@ input:checked + ul{
     line-height: normal;
 }
 
-.more {
-    width: 127px;
-    height: 48px;
-    border-radius: 8px;
-    background: rgba(99, 112, 81, 0.90);
+.where{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -210,52 +199,25 @@ input:checked + ul{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-   
-}
-
-.more a{
-    color: #FFF;
-    font-family: Jomolhari;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-
-.new{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 20px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
-.zoli{
-    width: 253px;
-    height: 1px;
-    background-color: black;
-    border: 1px  black; 
-}
-
-.new p{
+.where p{
     color: #000;
-    font-family: Kaisei Decol;
-    font-size: 30px;
+    font-family: JejuMyeongjo;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;    
+    line-height: normal;
 }
 
-.albums{
+
+.product{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -265,9 +227,55 @@ input:checked + ul{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    color: #000;
+    font-family: Kameron;
+    font-size: 20px;
+    
+    /* font-style: normal; */
+    /* line-height: normal; */
+}
+
+.product h4{
+    font-family: JejuMyeongjo;
+    font-size: 25px;
+   
     
 }
-.test{
+
+.product h3{
+    color: #000;
+    font-family: 'Metal', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product p{
+    max-width: 500px;
+}
+
+
+.pic{
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/twisted.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.product p2{
+    color: #000;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.txt{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -275,160 +283,71 @@ input:checked + ul{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+}
+.buynow{
+    width: 426.617px;
+    height: 76px;
+    border-radius: 20px;
+    background: #24253C;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 600px;
-}
-.albumN1 {
-    width: 300px;
-    height: 300px;
-    background-image: url(../images/vultures.png);
-    background-repeat: no-repeat;
 }
 
+.buynow p{
+    color: #FFF;
+    font-family: 'Jomolhari', serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: normal;
+}
 
-.albums p{
-    color: #000;
-    font-family: JejuMyeongjo;
+.fav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+}
+
+.love{
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
-.albumN2{
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    
-}
+.love input[type="checkbox"] {
+    display: none;
+  }
 
-.albumN3{
-    width: 320px;
-    height: 300px;
-    background-image: url(../images/Kanye_West_-_Jesus_Is_King.png);
-    background-repeat: no-repeat;
-}
+  .love i {
+    color: lightgray;
+  }
 
-.albumbtn{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
 
-.everyalbum{
-    width: 235px;
-    height: 60px;
-    border-radius: 8px;
-    background: rgba(11, 37, 56, 0.80);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.albumbtn p{
-    color: #FFF;
-    font-family: JejuMyeongjo;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.cover{
-    margin-top: 99px;
-
-}
-
-.polar{
-    height: 578px;
-    background-image: url(../images/bipolar.jpg);
-    background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-
-.cover p{
-    color: #FFF;
-    text-align: center;
-    font-family: Judson;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.cadetblue{
-    width: 100%;
-    height: 333px;
-    background-color: #273A47;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    /* flex-direction: column; */
-}
-
-.cover .cadetblue p {
-    /* width: 1140px; */
-    /* flex-shrink: 0; */
-    color: #FFF;
-    text-align: center;
-    font-family: Karma;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: auto; 
-    display: inline-block;
-
-}
-
-.cover .cadetblue h4{
-    color: #FFF;
-    font-family: Karma;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    max-width: 600px;
-    width: px;
-}
+  .love input[type="checkbox"]:checked + label i {
+    color: red; 
+  }
 
 
 .abtus{
     width: 100%;
     height: 330px;
     background-color: #E4E4E4;
-    
+    margin-top: 100px;
 }
 
 .rows{
@@ -520,68 +439,4 @@ input:checked + ul{
         -ms-flex-align: center;
             align-items: center;
     color: #FFF;
-}
-
-
-@media (max-width:500px){
-    .menu{
-        display: block;
-        font-size: 40px;
-    }
-    ul{
-        display: none;
-    }
-    .search-bar, .icons {
-        display: none;
-    }
-   
-    .navbar{
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-    }
-
-   .containe p{
-        font-size: 25px;
-        max-width: 250px;
-   }
-
-   .containe{
-    width: 100%;
-    height: 268px;
-   }
-
-   .more{
-    margin-bottom: 50px;
-   }
-   .albums{
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-   }
-
-   .zoli{
-    width: 100px;
-   }
-
-   .cover p{
-    font-weight: 500;
-    font-size: 30px;
-    max-width: 300px;
-   }
-
-   .cadetblue h2{
-    max-width: 10px;
-   }
-
-   .row1, .btminfo2 {
-    display: none;
-   }
-
-   .test{
-    width: auto;
-   }
-
-
 }
