@@ -524,3 +524,24 @@ button i {
         font-size: 20px;
     }
 }
+
+@media (max-width:400px){
+   .where p{
+    font-size: 17px;
+   }
+   .pic{
+    width: 100%;
+   }
+   .containe{
+    width: 100%;
+   }
+   .love{
+    margin-right: 30px;
+   }
+   .fav{
+    width: 350px
+   }
+   .txt h3{
+    font-size: 25px;
+   }
+}

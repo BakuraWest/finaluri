@@ -371,12 +371,13 @@ input:checked ~ ul{
    .transparent {
     font-size: 30px;
     background:none;
-   
+   width: 100%;
    }
 
    .transparent p, h2 {
-    width: 370px;
-    margin-right: 230px;
+    width: 350px;
+ 
+   
    }
 
    .row1, .btminfo2 {
@@ -387,4 +388,12 @@ input:checked ~ ul{
     width: auto;
    }
 
+}
+@media (max-width:400px){
+    .new p{
+        font-size: 20px;
+    }
+    .test p{
+        font-size: 25px;
+    }
 }

@@ -449,3 +449,12 @@ button i {
    
    
 }
+
+@media (max-width:400px){
+    .new p{
+        font-size: 25px;
+    }
+    .test p{
+        font-size: 25px;
+    }
+}
